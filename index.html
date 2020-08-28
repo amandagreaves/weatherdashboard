@@ -8,11 +8,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+</br>
     <h1 class="uk-heading-line uk-text-center"><span>Weather Dashboard</span></h1>
     <div class="welcome">
-        <h4 style="text-align: center;" >Welcome, please choose a city to retrieve the weather forecast.</h2>
+        <h4 style="text-align: center; color:darkblue;" >Welcome, please search a city and state to retrieve the weather forecast.</h2>
     </div>
     <hr class="uk-divider-icon">
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+            <div class="uk-navbar-item">
+                <form style="text-align: center;" class="uk-search uk-search-navbar">
+                    <span uk-search-icon></span>
+                    <input id="citySearched" class="uk-search-input" type="input" placeholder="Enter a city...">
+                </form>
+            </div>
+            <button id="searchButton" type=submit class="uk-button uk-button-secondary uk-width-1-1">Search</button>
+        </div>
+    </nav>
+    <div id="cityDisplay" class="container">
+        <h4 style="text-align: center;">The 5 day weather forecast for the city you chose is:</h4>
+    
+    </div>
+
+
+    <div class="uk-flex uk-flex-center">
+        <div id="day1" class="uk-card uk-card-default uk-card-large uk-card-body">Day 1</div>
+        <div id="day2" class="uk-card uk-card-default uk-card-large uk-card-body uk-margin-left">Day 2</div>
+        <div id="day3" class="uk-card uk-card-default uk-card-large uk-card-body uk-margin-left">Day 3</div>
+        <div id="day4" class="uk-card uk-card-default uk-card-large uk-card-body uk-margin-left">Day 4</div>
+        <div id="day5" class="uk-card uk-card-default uk-card-large uk-card-body uk-margin-left">Day 5</div>
+    </div>
+
+
+
+
 
 
 
